@@ -1,1 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | LAYORA Hijabs</title>
+
+<meta name="description" content="Secure Checkout - Layora Hijabs">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="announcement-bar">
+
+✨ Cash on Delivery Available • Online Payment Coming Soon • Premium Hijabs
+
+</div>
+
+<header>
+
+<div class="logo">
+
+<a href="index.html">
+
+LAYORA
+
+</a>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="collections.html">Collections</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="checkout-page">
+
+<div class="checkout-wrapper">
+
+<div class="checkout-left">
+
+<h2>Order Summary</h2>
+
+<div class="product-summary">
+
+<img
+id="checkoutImage"
+src="images/no-image.png"
+alt="Product">
+
+<div>
+
+<h3 id="checkoutProduct">
+
+Loading...
+
+</h3>
+
+<p>
+
+Category:
+<span id="checkoutCategory"></span>
+
+</p>
+
+<p>
+
+Quantity:
+<span id="checkoutQty">
+
+1
+
+</span>
+
+</p>
+
+<p>
+
+Price:
+
+₹<span id="checkoutPrice">
+
+0
+
+</span>
+
+</p>
+
+<h2>
+
+Total
+
+₹<span id="checkoutTotal">
+
+0
+
+</span>
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="checkout-right">
+
+<h2>
+
+Customer Details
+
+</h2>
+
+<form id="checkoutForm">
+
+<div class="input-group">
+
+<label>
+
+Full Name
+
+</label>
+
+<input
+type="text"
+id="customerName"
+placeholder="Enter your full name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Mobile Number
+
+</label>
+
+<input
+type="tel"
+id="customerPhone"
+maxlength="10"
+placeholder="10 Digit Mobile Number"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Email Address (Optional)
+
+</label>
+
+<input
+type="email"
+id="customerEmail"
+placeholder="example@gmail.com">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Address
+
+</label>
+
+<textarea
+id="customerAddress"
+rows="4"
+placeholder="House No, Street, Area"
+required></textarea>
+
+</div>
+<div class="input-group">
+
+<label>City</label>
+
+<input
+type="text"
+id="customerCity"
+placeholder="Enter your City"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>State</label>
+
+<input
+type="text"
+id="customerState"
+placeholder="Enter your State"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>PIN Code</label>
+
+<input
+type="number"
+id="customerPincode"
+placeholder="6 Digit PIN Code"
+maxlength="6"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Order Notes (Optional)</label>
+
+<textarea
+id="customerNotes"
+rows="3"
+placeholder="Any special instructions"></textarea>
+
+</div>
+
+<div class="payment-box">
+
+<h3>Payment Method</h3>
+
+<div class="payment-option active">
+
+<input
+type="radio"
+checked>
+
+<label>
+
+Cash on Delivery
+
+</label>
+
+</div>
+
+<div class="coming-soon">
+
+<i class="fa-solid fa-lock"></i>
+
+Online Payment Coming Soon
+
+</div>
+
+</div>
+
+<input
+type="hidden"
+id="productId">
+
+<input
+type="hidden"
+id="productPriceHidden">
+
+<input
+type="hidden"
+id="productQtyHidden">
+
+<button
+type="submit"
+class="place-order-btn">
+
+Place Order
+
+</button>
+
+<p class="secure-text">
+
+🔒 Your information is securely processed by LAYORA.
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="checkout-features">
+
+<div class="feature">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>Fast Shipping</h3>
+
+<p>Quick delivery across India.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>Premium Quality</h3>
+
+<p>Authentic premium hijabs.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>Customer Support</h3>
+
+<p>We're here to help you.</p>
+
+</div>
+
+</section>
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-column">
+
+<h3>LAYORA</h3>
+
+<p>Elegance in Every Veil</p>
+
+<p>Premium Hijabs & Accessories</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+
+<a href="collections.html">Collections</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Customer Care</h3>
+
+<a href="shipping-policy.html">Shipping Policy</a>
+
+<a href="privacy-policy.html">Privacy Policy</a>
+
+<a href="terms-and-conditions.html">Terms & Conditions</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<p>
+
+📍 G3 - Lagoon Mall<br>
+
+University Road<br>
+
+Deralakatte<br>
+
+Mangalore - 575018
+
+</p>
+
+<p>
+
+📞 +91 9880460536
+
+</p>
+
+<p>
+
+✉ LayoraHijabs@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 LAYORA Hijabs. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<a
+href="https://wa.me/919880460536"
+class="whatsapp-float"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<script src="js/products.js"></script>
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>

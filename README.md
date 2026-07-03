@@ -1,2 +1,2 @@
 # Layora-Hijabs-
-Official Website of Layora - The Hijab Boutique
+Official Website of Layora - The Hijab Boutique 
